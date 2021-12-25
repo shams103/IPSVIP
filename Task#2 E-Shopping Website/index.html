@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Appliances</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="index.html" class="logo"> <i class="fas fa-fan"></i> Grishma </a>
+
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+
+    </header>
+
+    <!-- header section ends  -->
+
+    <!-- closer btn  -->
+
+    <div id="closer" class="fas fa-times"></div>
+
+    <!-- navbar   -->
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="products.html">products</a>
+        <a href="about.html">about</a>
+        <a href="contact.html">contact</a>
+    </nav>
+
+    <!-- shopping cart  -->
+
+    <div class="shopping-cart">
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/loopz.png" alt="">
+            <div class="content">
+                <h3>heater</h3>
+                <span class="quantity"> 1 </span>
+                <span class="multiply"> x </span>
+                <span class="price"> $ 50.00 </span>
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/vg.jpg" alt="" >
+            <div class="content" style="margin-left: 50px;">
+                <h3 >morden iron</h3>
+                <span class="quantity"> 2 </span>
+                <span class="multiply"> x </span>
+                <span class="price">$ 90.00 </span>
+            </div>
+        </div>
+
+
+        <h3 class="total"> total : <span> $ 140.00 </span> </h3>
+
+        <a href="placeorder.html" class="btn">Place Order</a>
+
+    </div>
+
+    <!-- login form  -->
+
+    <div class="login-form">
+
+        <form action="">
+            <h3>login form</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">create now</a></p>
+        </form>
+
+    </div>
+
+    <!-- home section starts  -->
+    <section class="homeimg">
+
+        <div class="main">
+
+            <div class="main-img">
+                <img src="image/ewin.jpg" alt="" />
+            </div>
+
+            <div class="main-content">
+                <h2><span class="discount">75% </span> SALE OFF</h2>
+                <h1>
+                    <span>It's time to </span>
+                    <span>Warm Up</span>
+                    <span>your Home</span>
+                </h1>
+                <!-- <a class="btn" href="#">shop now</a> -->
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="home">
+
+        <div class="slides-container">
+
+            <div class="slide active">
+                <div class="content">
+                    <span>new arrivals</span>
+                    <h3>Trolley Heater</h3>
+                    <p>Easily rotating heater for the remote areas of home, featuring latest voice regulated touch premium
+                        craftsmanship,you're assured of advanced AI based that's built to last.</p>
+                    <a href="#" class="btn">Buy Now</a>
+                    
+                </div>
+                <div class="image">
+                    <img src="image/loop2.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>new arrivals</span>
+                    <h3>Room Heater</h3>
+                    <p>Beautiful, latest AI based technology in Vibrant colours. 100% automatic heat regulation, royale
+                         for lustre, and of easy carry for a luxurious Total warmth in winter.</p>
+                    <a href="#" class="btn">Buy Now</a>
+                   
+                </div>
+                <div class="image">
+                    <img src="image/loopz.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>new arrivals</span>
+                    <h3>Pocket Heater</h3>
+                    <p>Small sophisticated design for easy light weight chargeable heater suited to travellers
+                        you're assured of high-battery backup that's built for the new generation.</p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+                <div class="image">
+                    <img src="image/new.png" alt="">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="content">
+                    <span>new arrivals</span>
+                    <h3>Wall Heater</h3>
+                    <p>Our collection of luxury sets for the living room features stunning designs and premium
+                        craftsmanship,you're assured of high-quality heaters that's built to last.</p>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+                <div class="image">
+                    <img src="image/pope.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="slide-next" onclick="next()" class="fas fa-angle-right"></div>
+        <div id="slide-prev" onclick="prev()" class="fas fa-angle-left"></div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- banner section starts  -->
+
+    <section class="banner-container">
+
+        <div class="banner">
+            <img src="image/lakal.jpg" alt="">
+            <div class="content">
+                <div class="a">
+                    <span>limited offer</span>
+                    <h3>upto 50% off</h3>
+                </div>
+                <div class="b">
+                    <a href="#" class="btnZ">shop now</a>
+                </div>
+               
+                
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/kj.jpg" alt="">
+            <div class="content">
+                <div class="a">
+                <span>limited offer</span>
+                <h3>upto 60% off</h3>
+            </div>
+            <div class="b">
+                <a href="#" class="btnZ">shop now</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/szs.png" alt="">
+            <div class="content">
+                <div class="a">
+                <span>limited offer</span>
+                <h3>upto 30% off</h3>
+            </div>
+                <div class="b">
+                <a href="#" class="btnZ">shop now</a>
+            </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/zsd2.jpg" alt="">
+            <div class="content">
+                <div class="a">
+                    <span>limited offer</span>
+                    <h3>upto 30% off</h3>
+                </div>
+                    <div class="b">
+                    <a href="#" class="btnZ">shop now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/zsd.jpg" alt="">
+            <div class="content">
+                <div class="a">
+                    <span>limited offer</span>
+                    <h3>upto 30% off</h3>
+                </div>
+                    <div class="b">
+                    <a href="#" class="btnZ">shop now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/lka.png" alt="" style="background-color: rgb(255, 255, 255);">
+            <div class="content">
+                <div class="a">
+                    <span>limited offer</span>
+                    <h3>upto 30% off</h3>
+                </div>
+                    <div class="b">
+                    <a href="#" class="btnZ">shop now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- banner section ends -->
+
+
+
+    <!-- footer section  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html"> <i class="fas fa-arrow-right"></i> home</a>
+                <a href="products.html"> <i class="fas fa-arrow-right"></i> shop</a>
+                <a href="about.html"> <i class="fas fa-arrow-right"></i> about</a>
+                <a href="contact.html"> <i class="fas fa-arrow-right"></i> contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my order</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my wishlist</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> my account</a>
+                <a href="#"> <i class="fas fa-arrow-right"></i> terms of user</a>
+            </div>
+
+            <div class="box">
+                <h3>Reach out to us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="enter your email" id="">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="credit">
+        all rights reserved!
+    </section>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>
